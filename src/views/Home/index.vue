@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  home
+  home <div style="height: 1300px;"></div>
 </template>
