@@ -3,13 +3,9 @@
 
 <template>
   <RouterView />
-  <div class="aaa">ssssssssssssss</div>
 </template>
 
 <style scoped lang="scss">
-.aaa {
-  color: $priceColor;
-}
 header {
   line-height: 1.5;
   max-height: 100vh;
