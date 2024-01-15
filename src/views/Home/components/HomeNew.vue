@@ -1,5 +1,5 @@
 <script setup>
-import HomePannel from "./HomePannel.vue";
+import HomePanel from "./HomePanel.vue";
 import { findNewAPI } from "@/apis/home.js";
 import { onMounted, ref } from "vue";
 // 获取数据
@@ -14,7 +14,7 @@ onMounted(() => getNewList());
 </script>
 
 <template>
-  <HomePannel title="新鲜好物" sub-title="新鲜出炉 品质靠谱">
+  <HomePanel title="新鲜好物" sub-title="新鲜出炉 品质靠谱">
     <ul class="goods-list">
       <li v-for="item in newList" :key="item.id">
         <RouterLink to="/">
@@ -24,7 +24,7 @@ onMounted(() => getNewList());
         </RouterLink>
       </li>
     </ul>
-  </HomePannel>
+  </HomePanel>
 </template>
 
 
