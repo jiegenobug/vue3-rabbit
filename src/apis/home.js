@@ -1,9 +1,14 @@
 import requ from "@/utils/http.js"
 
 // 获取Banner
-export function getBannerAPI() {
+export function getBannerAPI(params = {}) {
+  // 默认为1，商品为2
+  const { distributionSite = '1' } = params
   return requ({
-    url: '/home/banner'
+    url: '/home/banner',
+    params: {
+      distributionSite
+    }
   })
 }
 
